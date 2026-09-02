@@ -51,9 +51,8 @@ class DefaultApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> DefaultRootResponse:
-        """Get the API root
+        """GET /
 
-        Returns the root API resource.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -114,9 +113,8 @@ class DefaultApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[DefaultRootResponse]:
-        """Get the API root
+        """GET /
 
-        Returns the root API resource.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -177,9 +175,8 @@ class DefaultApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """Get the API root
+        """GET /
 
-        Returns the root API resource.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request

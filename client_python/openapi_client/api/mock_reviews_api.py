@@ -61,7 +61,7 @@ class MockReviewsApi:
     ) -> MockReviewsMockCreateReviewResponse:
         """Create a mock review
 
-        Creates a review in the mock review collection.
+        Adds a review to the mock review collection.
 
         :param mock_reviews_mock_create_review_request: (required)
         :type mock_reviews_mock_create_review_request: MockReviewsMockCreateReviewRequest
@@ -130,7 +130,7 @@ class MockReviewsApi:
     ) -> ApiResponse[MockReviewsMockCreateReviewResponse]:
         """Create a mock review
 
-        Creates a review in the mock review collection.
+        Adds a review to the mock review collection.
 
         :param mock_reviews_mock_create_review_request: (required)
         :type mock_reviews_mock_create_review_request: MockReviewsMockCreateReviewRequest
@@ -199,7 +199,7 @@ class MockReviewsApi:
     ) -> RESTResponseType:
         """Create a mock review
 
-        Creates a review in the mock review collection.
+        Adds a review to the mock review collection.
 
         :param mock_reviews_mock_create_review_request: (required)
         :type mock_reviews_mock_create_review_request: MockReviewsMockCreateReviewRequest
@@ -609,7 +609,7 @@ class MockReviewsApi:
     ) -> MockReviewsMockCreateReviewResponse:
         """Get a mock review
 
-        Returns the mock review identified by the item ID.
+        Retrieves the mock review identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -678,7 +678,7 @@ class MockReviewsApi:
     ) -> ApiResponse[MockReviewsMockCreateReviewResponse]:
         """Get a mock review
 
-        Returns the mock review identified by the item ID.
+        Retrieves the mock review identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -747,7 +747,7 @@ class MockReviewsApi:
     ) -> RESTResponseType:
         """Get a mock review
 
-        Returns the mock review identified by the item ID.
+        Retrieves the mock review identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -878,7 +878,7 @@ class MockReviewsApi:
     ) -> MockReviewsMockListReviewsResponse:
         """List mock reviews
 
-        Returns the mock review collection.
+        Retrieves the mock review collection.
 
         :param limit:
         :type limit: int
@@ -958,7 +958,7 @@ class MockReviewsApi:
     ) -> ApiResponse[MockReviewsMockListReviewsResponse]:
         """List mock reviews
 
-        Returns the mock review collection.
+        Retrieves the mock review collection.
 
         :param limit:
         :type limit: int
@@ -1038,7 +1038,7 @@ class MockReviewsApi:
     ) -> RESTResponseType:
         """List mock reviews
 
-        Returns the mock review collection.
+        Retrieves the mock review collection.
 
         :param limit:
         :type limit: int

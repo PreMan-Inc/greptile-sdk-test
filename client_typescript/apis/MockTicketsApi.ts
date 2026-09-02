@@ -136,7 +136,7 @@ export class MockTicketsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Creates a ticket in the mock ticket collection.
+     * Adds a ticket to the mock ticket collection.
      * Create a mock ticket
      */
     async mockTicketsMockCreateTicketRaw(requestParameters: MockTicketsMockCreateTicketOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockTicketsMockCreateTicketResponse>> {
@@ -147,7 +147,7 @@ export class MockTicketsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Creates a ticket in the mock ticket collection.
+     * Adds a ticket to the mock ticket collection.
      * Create a mock ticket
      */
     async mockTicketsMockCreateTicket(requestParameters: MockTicketsMockCreateTicketOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockTicketsMockCreateTicketResponse> {
@@ -229,7 +229,7 @@ export class MockTicketsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock ticket identified by the item ID.
+     * Retrieves the mock ticket identified by the item ID.
      * Get a mock ticket
      */
     async mockTicketsMockGetTicketRaw(requestParameters: MockTicketsMockGetTicketRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockTicketsMockCreateTicketResponse>> {
@@ -240,7 +240,7 @@ export class MockTicketsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock ticket identified by the item ID.
+     * Retrieves the mock ticket identified by the item ID.
      * Get a mock ticket
      */
     async mockTicketsMockGetTicket(requestParameters: MockTicketsMockGetTicketRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockTicketsMockCreateTicketResponse> {
@@ -284,7 +284,7 @@ export class MockTicketsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock ticket collection.
+     * Retrieves the mock ticket collection.
      * List mock tickets
      */
     async mockTicketsMockListTicketsRaw(requestParameters: MockTicketsMockListTicketsRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockTicketsMockListTicketsResponse>> {
@@ -295,7 +295,7 @@ export class MockTicketsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock ticket collection.
+     * Retrieves the mock ticket collection.
      * List mock tickets
      */
     async mockTicketsMockListTickets(requestParameters: MockTicketsMockListTicketsRequest = {}, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockTicketsMockListTicketsResponse> {

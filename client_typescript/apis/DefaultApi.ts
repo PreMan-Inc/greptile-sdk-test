@@ -44,8 +44,7 @@ export class DefaultApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the root API resource.
-     * Get the API root
+     * GET /
      */
     async defaultRootRaw(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<DefaultRootResponse>> {
         const requestOptions = await this.defaultRootRequestOpts();
@@ -55,8 +54,7 @@ export class DefaultApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the root API resource.
-     * Get the API root
+     * GET /
      */
     async defaultRoot(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<DefaultRootResponse> {
         const response = await this.defaultRootRaw(initOverrides);

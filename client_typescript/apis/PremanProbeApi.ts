@@ -70,8 +70,8 @@ export class PremanProbeApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns discount information from the Preman probe.
-     * Get a discount
+     * Retrieves discount information from the Preman probe.
+     * Get the discount probe result
      */
     async premanProbeDiscountApiV1PremanProbeDiscountGetRaw(requestParameters: PremanProbeDiscountApiV1PremanProbeDiscountGetRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<PremanProbeDiscountApiV1PremanProbeDiscountGetResponse>> {
         const requestOptions = await this.premanProbeDiscountApiV1PremanProbeDiscountGetRequestOpts(requestParameters);
@@ -81,8 +81,8 @@ export class PremanProbeApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns discount information from the Preman probe.
-     * Get a discount
+     * Retrieves discount information from the Preman probe.
+     * Get the discount probe result
      */
     async premanProbeDiscountApiV1PremanProbeDiscountGet(requestParameters: PremanProbeDiscountApiV1PremanProbeDiscountGetRequest = {}, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<PremanProbeDiscountApiV1PremanProbeDiscountGetResponse> {
         const response = await this.premanProbeDiscountApiV1PremanProbeDiscountGetRaw(requestParameters, initOverrides);
@@ -109,8 +109,8 @@ export class PremanProbeApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns order total information from the Preman probe.
-     * Get an order total
+     * Retrieves order total information from the Preman probe.
+     * Get the order total probe result
      */
     async premanProbeOrderTotalApiV1PremanProbeOrderTotalGetRaw(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<PremanProbeOrderTotalApiV1PremanProbeOrderTotalGetResponse>> {
         const requestOptions = await this.premanProbeOrderTotalApiV1PremanProbeOrderTotalGetRequestOpts();
@@ -120,8 +120,8 @@ export class PremanProbeApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns order total information from the Preman probe.
-     * Get an order total
+     * Retrieves order total information from the Preman probe.
+     * Get the order total probe result
      */
     async premanProbeOrderTotalApiV1PremanProbeOrderTotalGet(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<PremanProbeOrderTotalApiV1PremanProbeOrderTotalGetResponse> {
         const response = await this.premanProbeOrderTotalApiV1PremanProbeOrderTotalGetRaw(initOverrides);
@@ -148,8 +148,8 @@ export class PremanProbeApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns refund status information from the Preman probe.
-     * Get a refund status
+     * Retrieves refund status information from the Preman probe.
+     * Get the refund status probe result
      */
     async premanProbeRefundStatusApiV1PremanProbeRefundStatusGetRaw(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<PremanProbeRefundStatusApiV1PremanProbeRefundStatusGetResponse>> {
         const requestOptions = await this.premanProbeRefundStatusApiV1PremanProbeRefundStatusGetRequestOpts();
@@ -159,8 +159,8 @@ export class PremanProbeApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns refund status information from the Preman probe.
-     * Get a refund status
+     * Retrieves refund status information from the Preman probe.
+     * Get the refund status probe result
      */
     async premanProbeRefundStatusApiV1PremanProbeRefundStatusGet(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<PremanProbeRefundStatusApiV1PremanProbeRefundStatusGetResponse> {
         const response = await this.premanProbeRefundStatusApiV1PremanProbeRefundStatusGetRaw(initOverrides);
@@ -187,8 +187,8 @@ export class PremanProbeApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns shipping estimate information from the Preman probe.
-     * Get a shipping estimate
+     * Retrieves shipping estimate information from the Preman probe.
+     * Get the shipping estimate probe result
      */
     async premanProbeShippingEstimateApiV1PremanProbeShippingEstimateGetRaw(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<PremanProbeShippingEstimateApiV1PremanProbeShippingEstimateGetResponse>> {
         const requestOptions = await this.premanProbeShippingEstimateApiV1PremanProbeShippingEstimateGetRequestOpts();
@@ -198,8 +198,8 @@ export class PremanProbeApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns shipping estimate information from the Preman probe.
-     * Get a shipping estimate
+     * Retrieves shipping estimate information from the Preman probe.
+     * Get the shipping estimate probe result
      */
     async premanProbeShippingEstimateApiV1PremanProbeShippingEstimateGet(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<PremanProbeShippingEstimateApiV1PremanProbeShippingEstimateGetResponse> {
         const response = await this.premanProbeShippingEstimateApiV1PremanProbeShippingEstimateGetRaw(initOverrides);

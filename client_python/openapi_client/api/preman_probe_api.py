@@ -57,9 +57,9 @@ class PremanProbeApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> PremanProbeDiscountApiV1PremanProbeDiscountGetResponse:
-        """Get a discount
+        """Get the discount probe result
 
-        Returns discount information from the Preman probe.
+        Retrieves discount information from the Preman probe.
 
         :param percent_off:
         :type percent_off: int
@@ -125,9 +125,9 @@ class PremanProbeApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[PremanProbeDiscountApiV1PremanProbeDiscountGetResponse]:
-        """Get a discount
+        """Get the discount probe result
 
-        Returns discount information from the Preman probe.
+        Retrieves discount information from the Preman probe.
 
         :param percent_off:
         :type percent_off: int
@@ -193,9 +193,9 @@ class PremanProbeApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """Get a discount
+        """Get the discount probe result
 
-        Returns discount information from the Preman probe.
+        Retrieves discount information from the Preman probe.
 
         :param percent_off:
         :type percent_off: int
@@ -321,9 +321,9 @@ class PremanProbeApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> PremanProbeOrderTotalApiV1PremanProbeOrderTotalGetResponse:
-        """Get an order total
+        """Get the order total probe result
 
-        Returns order total information from the Preman probe.
+        Retrieves order total information from the Preman probe.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -384,9 +384,9 @@ class PremanProbeApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[PremanProbeOrderTotalApiV1PremanProbeOrderTotalGetResponse]:
-        """Get an order total
+        """Get the order total probe result
 
-        Returns order total information from the Preman probe.
+        Retrieves order total information from the Preman probe.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -447,9 +447,9 @@ class PremanProbeApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """Get an order total
+        """Get the order total probe result
 
-        Returns order total information from the Preman probe.
+        Retrieves order total information from the Preman probe.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -566,9 +566,9 @@ class PremanProbeApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> PremanProbeRefundStatusApiV1PremanProbeRefundStatusGetResponse:
-        """Get a refund status
+        """Get the refund status probe result
 
-        Returns refund status information from the Preman probe.
+        Retrieves refund status information from the Preman probe.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -629,9 +629,9 @@ class PremanProbeApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[PremanProbeRefundStatusApiV1PremanProbeRefundStatusGetResponse]:
-        """Get a refund status
+        """Get the refund status probe result
 
-        Returns refund status information from the Preman probe.
+        Retrieves refund status information from the Preman probe.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -692,9 +692,9 @@ class PremanProbeApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """Get a refund status
+        """Get the refund status probe result
 
-        Returns refund status information from the Preman probe.
+        Retrieves refund status information from the Preman probe.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -811,9 +811,9 @@ class PremanProbeApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> PremanProbeShippingEstimateApiV1PremanProbeShippingEstimateGetResponse:
-        """Get a shipping estimate
+        """Get the shipping estimate probe result
 
-        Returns shipping estimate information from the Preman probe.
+        Retrieves shipping estimate information from the Preman probe.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -874,9 +874,9 @@ class PremanProbeApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[PremanProbeShippingEstimateApiV1PremanProbeShippingEstimateGetResponse]:
-        """Get a shipping estimate
+        """Get the shipping estimate probe result
 
-        Returns shipping estimate information from the Preman probe.
+        Retrieves shipping estimate information from the Preman probe.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -937,9 +937,9 @@ class PremanProbeApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """Get a shipping estimate
+        """Get the shipping estimate probe result
 
-        Returns shipping estimate information from the Preman probe.
+        Retrieves shipping estimate information from the Preman probe.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request

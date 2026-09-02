@@ -61,7 +61,7 @@ class MockProductsApi:
     ) -> MockProductsMockCreateProductResponse:
         """Create a mock product
 
-        Creates a product in the mock product collection.
+        Adds a product to the mock product collection.
 
         :param mock_products_mock_create_product_request: (required)
         :type mock_products_mock_create_product_request: MockProductsMockCreateProductRequest
@@ -130,7 +130,7 @@ class MockProductsApi:
     ) -> ApiResponse[MockProductsMockCreateProductResponse]:
         """Create a mock product
 
-        Creates a product in the mock product collection.
+        Adds a product to the mock product collection.
 
         :param mock_products_mock_create_product_request: (required)
         :type mock_products_mock_create_product_request: MockProductsMockCreateProductRequest
@@ -199,7 +199,7 @@ class MockProductsApi:
     ) -> RESTResponseType:
         """Create a mock product
 
-        Creates a product in the mock product collection.
+        Adds a product to the mock product collection.
 
         :param mock_products_mock_create_product_request: (required)
         :type mock_products_mock_create_product_request: MockProductsMockCreateProductRequest
@@ -609,7 +609,7 @@ class MockProductsApi:
     ) -> MockProductsMockCreateProductResponse:
         """Get a mock product
 
-        Returns the mock product identified by the item ID.
+        Retrieves the mock product identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -678,7 +678,7 @@ class MockProductsApi:
     ) -> ApiResponse[MockProductsMockCreateProductResponse]:
         """Get a mock product
 
-        Returns the mock product identified by the item ID.
+        Retrieves the mock product identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -747,7 +747,7 @@ class MockProductsApi:
     ) -> RESTResponseType:
         """Get a mock product
 
-        Returns the mock product identified by the item ID.
+        Retrieves the mock product identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -878,7 +878,7 @@ class MockProductsApi:
     ) -> MockProductsMockListProductsResponse:
         """List mock products
 
-        Returns the mock product collection.
+        Retrieves the mock product collection.
 
         :param limit:
         :type limit: int
@@ -958,7 +958,7 @@ class MockProductsApi:
     ) -> ApiResponse[MockProductsMockListProductsResponse]:
         """List mock products
 
-        Returns the mock product collection.
+        Retrieves the mock product collection.
 
         :param limit:
         :type limit: int
@@ -1038,7 +1038,7 @@ class MockProductsApi:
     ) -> RESTResponseType:
         """List mock products
 
-        Returns the mock product collection.
+        Retrieves the mock product collection.
 
         :param limit:
         :type limit: int

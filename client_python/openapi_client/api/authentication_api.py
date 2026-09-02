@@ -63,7 +63,7 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> AuthenticationChangePasswordApiV1AuthChangePasswordPostResponse:
-        """Change your password
+        """Change the current user's password
 
         Changes the password for the authenticated user.
 
@@ -131,7 +131,7 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[AuthenticationChangePasswordApiV1AuthChangePasswordPostResponse]:
-        """Change your password
+        """Change the current user's password
 
         Changes the password for the authenticated user.
 
@@ -199,7 +199,7 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """Change your password
+        """Change the current user's password
 
         Changes the password for the authenticated user.
 
@@ -339,9 +339,9 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> AuthenticationForgotPasswordApiV1AuthForgotPasswordPostResponse:
-        """Start password recovery
+        """Request a password reset
 
-        Starts the forgotten-password flow for a user.
+        Starts the forgot-password process for a user.
 
         :param authentication_forgot_password_api_v1_auth_forgot_password_post_request: (required)
         :type authentication_forgot_password_api_v1_auth_forgot_password_post_request: AuthenticationForgotPasswordApiV1AuthForgotPasswordPostRequest
@@ -407,9 +407,9 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[AuthenticationForgotPasswordApiV1AuthForgotPasswordPostResponse]:
-        """Start password recovery
+        """Request a password reset
 
-        Starts the forgotten-password flow for a user.
+        Starts the forgot-password process for a user.
 
         :param authentication_forgot_password_api_v1_auth_forgot_password_post_request: (required)
         :type authentication_forgot_password_api_v1_auth_forgot_password_post_request: AuthenticationForgotPasswordApiV1AuthForgotPasswordPostRequest
@@ -475,9 +475,9 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """Start password recovery
+        """Request a password reset
 
-        Starts the forgotten-password flow for a user.
+        Starts the forgot-password process for a user.
 
         :param authentication_forgot_password_api_v1_auth_forgot_password_post_request: (required)
         :type authentication_forgot_password_api_v1_auth_forgot_password_post_request: AuthenticationForgotPasswordApiV1AuthForgotPasswordPostRequest
@@ -614,9 +614,9 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> AuthenticationGetMeApiV1AuthMeGetResponse:
-        """Get your profile
+        """Get the current user
 
-        Returns the authenticated user's profile.
+        Retrieves information about the authenticated user.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -677,9 +677,9 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[AuthenticationGetMeApiV1AuthMeGetResponse]:
-        """Get your profile
+        """Get the current user
 
-        Returns the authenticated user's profile.
+        Retrieves information about the authenticated user.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -740,9 +740,9 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """Get your profile
+        """Get the current user
 
-        Returns the authenticated user's profile.
+        Retrieves information about the authenticated user.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -860,7 +860,7 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> AuthenticationLoginApiV1AuthLoginPostResponse:
-        """Log in
+        """Log in a user
 
         Authenticates a user.
 
@@ -928,7 +928,7 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[AuthenticationLoginApiV1AuthLoginPostResponse]:
-        """Log in
+        """Log in a user
 
         Authenticates a user.
 
@@ -996,7 +996,7 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """Log in
+        """Log in a user
 
         Authenticates a user.
 
@@ -1136,7 +1136,7 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> None:
-        """Log out
+        """Log out the current user
 
         Logs out the authenticated user.
 
@@ -1204,7 +1204,7 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[None]:
-        """Log out
+        """Log out the current user
 
         Logs out the authenticated user.
 
@@ -1272,7 +1272,7 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """Log out
+        """Log out the current user
 
         Logs out the authenticated user.
 
@@ -1414,7 +1414,7 @@ class AuthenticationApi:
     ) -> AuthenticationLoginApiV1AuthLoginPostResponse:
         """Refresh authentication
 
-        Refreshes the current authentication session.
+        Refreshes the current authentication session or credentials.
 
         :param authentication_refresh_api_v1_auth_refresh_post_request: (required)
         :type authentication_refresh_api_v1_auth_refresh_post_request: AuthenticationRefreshApiV1AuthRefreshPostRequest
@@ -1482,7 +1482,7 @@ class AuthenticationApi:
     ) -> ApiResponse[AuthenticationLoginApiV1AuthLoginPostResponse]:
         """Refresh authentication
 
-        Refreshes the current authentication session.
+        Refreshes the current authentication session or credentials.
 
         :param authentication_refresh_api_v1_auth_refresh_post_request: (required)
         :type authentication_refresh_api_v1_auth_refresh_post_request: AuthenticationRefreshApiV1AuthRefreshPostRequest
@@ -1550,7 +1550,7 @@ class AuthenticationApi:
     ) -> RESTResponseType:
         """Refresh authentication
 
-        Refreshes the current authentication session.
+        Refreshes the current authentication session or credentials.
 
         :param authentication_refresh_api_v1_auth_refresh_post_request: (required)
         :type authentication_refresh_api_v1_auth_refresh_post_request: AuthenticationRefreshApiV1AuthRefreshPostRequest
@@ -1690,7 +1690,7 @@ class AuthenticationApi:
     ) -> AuthenticationLoginApiV1AuthLoginPostResponse:
         """Register a user
 
-        Registers a new user.
+        Creates a user account.
 
         :param authentication_register_api_v1_auth_register_post_request: (required)
         :type authentication_register_api_v1_auth_register_post_request: AuthenticationRegisterApiV1AuthRegisterPostRequest
@@ -1758,7 +1758,7 @@ class AuthenticationApi:
     ) -> ApiResponse[AuthenticationLoginApiV1AuthLoginPostResponse]:
         """Register a user
 
-        Registers a new user.
+        Creates a user account.
 
         :param authentication_register_api_v1_auth_register_post_request: (required)
         :type authentication_register_api_v1_auth_register_post_request: AuthenticationRegisterApiV1AuthRegisterPostRequest
@@ -1826,7 +1826,7 @@ class AuthenticationApi:
     ) -> RESTResponseType:
         """Register a user
 
-        Registers a new user.
+        Creates a user account.
 
         :param authentication_register_api_v1_auth_register_post_request: (required)
         :type authentication_register_api_v1_auth_register_post_request: AuthenticationRegisterApiV1AuthRegisterPostRequest
@@ -2240,9 +2240,9 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> AuthenticationGetMeApiV1AuthMeGetResponse:
-        """Update your profile
+        """Update the current user
 
-        Updates the authenticated user's profile.
+        Updates information for the authenticated user.
 
         :param authentication_update_me_api_v1_auth_me_patch_request: (required)
         :type authentication_update_me_api_v1_auth_me_patch_request: AuthenticationUpdateMeApiV1AuthMePatchRequest
@@ -2308,9 +2308,9 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> ApiResponse[AuthenticationGetMeApiV1AuthMeGetResponse]:
-        """Update your profile
+        """Update the current user
 
-        Updates the authenticated user's profile.
+        Updates information for the authenticated user.
 
         :param authentication_update_me_api_v1_auth_me_patch_request: (required)
         :type authentication_update_me_api_v1_auth_me_patch_request: AuthenticationUpdateMeApiV1AuthMePatchRequest
@@ -2376,9 +2376,9 @@ class AuthenticationApi:
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
     ) -> RESTResponseType:
-        """Update your profile
+        """Update the current user
 
-        Updates the authenticated user's profile.
+        Updates information for the authenticated user.
 
         :param authentication_update_me_api_v1_auth_me_patch_request: (required)
         :type authentication_update_me_api_v1_auth_me_patch_request: AuthenticationUpdateMeApiV1AuthMePatchRequest

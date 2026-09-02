@@ -44,7 +44,7 @@ export class SystemApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the system\'s health status.
+     * Retrieves the system\'s health status.
      * Check system health
      */
     async systemHealthHealthGetRaw(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<SystemHealthHealthGetResponse>> {
@@ -55,7 +55,7 @@ export class SystemApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the system\'s health status.
+     * Retrieves the system\'s health status.
      * Check system health
      */
     async systemHealthHealthGet(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<SystemHealthHealthGetResponse> {

@@ -61,7 +61,7 @@ class MockOrdersApi:
     ) -> MockOrdersMockCreateOrderResponse:
         """Create a mock order
 
-        Creates an order in the mock order collection.
+        Adds an order to the mock order collection.
 
         :param mock_orders_mock_create_order_request: (required)
         :type mock_orders_mock_create_order_request: MockOrdersMockCreateOrderRequest
@@ -130,7 +130,7 @@ class MockOrdersApi:
     ) -> ApiResponse[MockOrdersMockCreateOrderResponse]:
         """Create a mock order
 
-        Creates an order in the mock order collection.
+        Adds an order to the mock order collection.
 
         :param mock_orders_mock_create_order_request: (required)
         :type mock_orders_mock_create_order_request: MockOrdersMockCreateOrderRequest
@@ -199,7 +199,7 @@ class MockOrdersApi:
     ) -> RESTResponseType:
         """Create a mock order
 
-        Creates an order in the mock order collection.
+        Adds an order to the mock order collection.
 
         :param mock_orders_mock_create_order_request: (required)
         :type mock_orders_mock_create_order_request: MockOrdersMockCreateOrderRequest
@@ -609,7 +609,7 @@ class MockOrdersApi:
     ) -> MockOrdersMockCreateOrderResponse:
         """Get a mock order
 
-        Returns the mock order identified by the item ID.
+        Retrieves the mock order identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -678,7 +678,7 @@ class MockOrdersApi:
     ) -> ApiResponse[MockOrdersMockCreateOrderResponse]:
         """Get a mock order
 
-        Returns the mock order identified by the item ID.
+        Retrieves the mock order identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -747,7 +747,7 @@ class MockOrdersApi:
     ) -> RESTResponseType:
         """Get a mock order
 
-        Returns the mock order identified by the item ID.
+        Retrieves the mock order identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -859,6 +859,7 @@ class MockOrdersApi:
     @validate_call
     def mock_orders_mock_list_orders(
         self,
+        region: StrictStr,
         limit: Optional[Annotated[int, Field(le=100, strict=True, ge=1)]] = None,
         offset: Optional[Annotated[int, Field(strict=True, ge=0)]] = None,
         q: Optional[Annotated[str, Field(min_length=1, strict=True, max_length=100)]] = None,
@@ -878,8 +879,10 @@ class MockOrdersApi:
     ) -> MockOrdersMockListOrdersResponse:
         """List mock orders
 
-        Returns the mock order collection.
+        Retrieves the mock order collection.
 
+        :param region: (required)
+        :type region: str
         :param limit:
         :type limit: int
         :param offset:
@@ -911,6 +914,7 @@ class MockOrdersApi:
         """ # noqa: E501
 
         _param = self._mock_orders_mock_list_orders_serialize(
+            region=region,
             limit=limit,
             offset=offset,
             q=q,
@@ -939,6 +943,7 @@ class MockOrdersApi:
     @validate_call
     def mock_orders_mock_list_orders_with_http_info(
         self,
+        region: StrictStr,
         limit: Optional[Annotated[int, Field(le=100, strict=True, ge=1)]] = None,
         offset: Optional[Annotated[int, Field(strict=True, ge=0)]] = None,
         q: Optional[Annotated[str, Field(min_length=1, strict=True, max_length=100)]] = None,
@@ -958,8 +963,10 @@ class MockOrdersApi:
     ) -> ApiResponse[MockOrdersMockListOrdersResponse]:
         """List mock orders
 
-        Returns the mock order collection.
+        Retrieves the mock order collection.
 
+        :param region: (required)
+        :type region: str
         :param limit:
         :type limit: int
         :param offset:
@@ -991,6 +998,7 @@ class MockOrdersApi:
         """ # noqa: E501
 
         _param = self._mock_orders_mock_list_orders_serialize(
+            region=region,
             limit=limit,
             offset=offset,
             q=q,
@@ -1019,6 +1027,7 @@ class MockOrdersApi:
     @validate_call
     def mock_orders_mock_list_orders_without_preload_content(
         self,
+        region: StrictStr,
         limit: Optional[Annotated[int, Field(le=100, strict=True, ge=1)]] = None,
         offset: Optional[Annotated[int, Field(strict=True, ge=0)]] = None,
         q: Optional[Annotated[str, Field(min_length=1, strict=True, max_length=100)]] = None,
@@ -1038,8 +1047,10 @@ class MockOrdersApi:
     ) -> RESTResponseType:
         """List mock orders
 
-        Returns the mock order collection.
+        Retrieves the mock order collection.
 
+        :param region: (required)
+        :type region: str
         :param limit:
         :type limit: int
         :param offset:
@@ -1071,6 +1082,7 @@ class MockOrdersApi:
         """ # noqa: E501
 
         _param = self._mock_orders_mock_list_orders_serialize(
+            region=region,
             limit=limit,
             offset=offset,
             q=q,
@@ -1094,6 +1106,7 @@ class MockOrdersApi:
 
     def _mock_orders_mock_list_orders_serialize(
         self,
+        region,
         limit,
         offset,
         q,
@@ -1131,6 +1144,10 @@ class MockOrdersApi:
         if q is not None:
             
             _query_params.append(('q', q))
+            
+        if region is not None:
+            
+            _query_params.append(('region', region))
             
         if sort is not None:
             

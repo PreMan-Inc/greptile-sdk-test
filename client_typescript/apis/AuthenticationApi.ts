@@ -166,7 +166,7 @@ export class AuthenticationApi extends runtime.BaseAPI {
 
     /**
      * Changes the password for the authenticated user.
-     * Change your password
+     * Change the current user\'s password
      */
     async authenticationChangePasswordApiV1AuthChangePasswordPostRaw(requestParameters: AuthenticationChangePasswordApiV1AuthChangePasswordPostOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<AuthenticationChangePasswordApiV1AuthChangePasswordPostResponse>> {
         const requestOptions = await this.authenticationChangePasswordApiV1AuthChangePasswordPostRequestOpts(requestParameters);
@@ -177,7 +177,7 @@ export class AuthenticationApi extends runtime.BaseAPI {
 
     /**
      * Changes the password for the authenticated user.
-     * Change your password
+     * Change the current user\'s password
      */
     async authenticationChangePasswordApiV1AuthChangePasswordPost(requestParameters: AuthenticationChangePasswordApiV1AuthChangePasswordPostOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<AuthenticationChangePasswordApiV1AuthChangePasswordPostResponse> {
         const response = await this.authenticationChangePasswordApiV1AuthChangePasswordPostRaw(requestParameters, initOverrides);
@@ -214,8 +214,8 @@ export class AuthenticationApi extends runtime.BaseAPI {
     }
 
     /**
-     * Starts the forgotten-password flow for a user.
-     * Start password recovery
+     * Starts the forgot-password process for a user.
+     * Request a password reset
      */
     async authenticationForgotPasswordApiV1AuthForgotPasswordPostRaw(requestParameters: AuthenticationForgotPasswordApiV1AuthForgotPasswordPostOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<AuthenticationForgotPasswordApiV1AuthForgotPasswordPostResponse>> {
         const requestOptions = await this.authenticationForgotPasswordApiV1AuthForgotPasswordPostRequestOpts(requestParameters);
@@ -225,8 +225,8 @@ export class AuthenticationApi extends runtime.BaseAPI {
     }
 
     /**
-     * Starts the forgotten-password flow for a user.
-     * Start password recovery
+     * Starts the forgot-password process for a user.
+     * Request a password reset
      */
     async authenticationForgotPasswordApiV1AuthForgotPasswordPost(requestParameters: AuthenticationForgotPasswordApiV1AuthForgotPasswordPostOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<AuthenticationForgotPasswordApiV1AuthForgotPasswordPostResponse> {
         const response = await this.authenticationForgotPasswordApiV1AuthForgotPasswordPostRaw(requestParameters, initOverrides);
@@ -253,8 +253,8 @@ export class AuthenticationApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the authenticated user\'s profile.
-     * Get your profile
+     * Retrieves information about the authenticated user.
+     * Get the current user
      */
     async authenticationGetMeApiV1AuthMeGetRaw(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<AuthenticationGetMeApiV1AuthMeGetResponse>> {
         const requestOptions = await this.authenticationGetMeApiV1AuthMeGetRequestOpts();
@@ -264,8 +264,8 @@ export class AuthenticationApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the authenticated user\'s profile.
-     * Get your profile
+     * Retrieves information about the authenticated user.
+     * Get the current user
      */
     async authenticationGetMeApiV1AuthMeGet(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<AuthenticationGetMeApiV1AuthMeGetResponse> {
         const response = await this.authenticationGetMeApiV1AuthMeGetRaw(initOverrides);
@@ -303,7 +303,7 @@ export class AuthenticationApi extends runtime.BaseAPI {
 
     /**
      * Authenticates a user.
-     * Log in
+     * Log in a user
      */
     async authenticationLoginApiV1AuthLoginPostRaw(requestParameters: AuthenticationLoginApiV1AuthLoginPostOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<AuthenticationLoginApiV1AuthLoginPostResponse>> {
         const requestOptions = await this.authenticationLoginApiV1AuthLoginPostRequestOpts(requestParameters);
@@ -314,7 +314,7 @@ export class AuthenticationApi extends runtime.BaseAPI {
 
     /**
      * Authenticates a user.
-     * Log in
+     * Log in a user
      */
     async authenticationLoginApiV1AuthLoginPost(requestParameters: AuthenticationLoginApiV1AuthLoginPostOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<AuthenticationLoginApiV1AuthLoginPostResponse> {
         const response = await this.authenticationLoginApiV1AuthLoginPostRaw(requestParameters, initOverrides);
@@ -352,7 +352,7 @@ export class AuthenticationApi extends runtime.BaseAPI {
 
     /**
      * Logs out the authenticated user.
-     * Log out
+     * Log out the current user
      */
     async authenticationLogoutApiV1AuthLogoutPostRaw(requestParameters: AuthenticationLogoutApiV1AuthLogoutPostOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<void>> {
         const requestOptions = await this.authenticationLogoutApiV1AuthLogoutPostRequestOpts(requestParameters);
@@ -363,7 +363,7 @@ export class AuthenticationApi extends runtime.BaseAPI {
 
     /**
      * Logs out the authenticated user.
-     * Log out
+     * Log out the current user
      */
     async authenticationLogoutApiV1AuthLogoutPost(requestParameters: AuthenticationLogoutApiV1AuthLogoutPostOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<void> {
         await this.authenticationLogoutApiV1AuthLogoutPostRaw(requestParameters, initOverrides);
@@ -399,7 +399,7 @@ export class AuthenticationApi extends runtime.BaseAPI {
     }
 
     /**
-     * Refreshes the current authentication session.
+     * Refreshes the current authentication session or credentials.
      * Refresh authentication
      */
     async authenticationRefreshApiV1AuthRefreshPostRaw(requestParameters: AuthenticationRefreshApiV1AuthRefreshPostOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<AuthenticationLoginApiV1AuthLoginPostResponse>> {
@@ -410,7 +410,7 @@ export class AuthenticationApi extends runtime.BaseAPI {
     }
 
     /**
-     * Refreshes the current authentication session.
+     * Refreshes the current authentication session or credentials.
      * Refresh authentication
      */
     async authenticationRefreshApiV1AuthRefreshPost(requestParameters: AuthenticationRefreshApiV1AuthRefreshPostOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<AuthenticationLoginApiV1AuthLoginPostResponse> {
@@ -448,7 +448,7 @@ export class AuthenticationApi extends runtime.BaseAPI {
     }
 
     /**
-     * Registers a new user.
+     * Creates a user account.
      * Register a user
      */
     async authenticationRegisterApiV1AuthRegisterPostRaw(requestParameters: AuthenticationRegisterApiV1AuthRegisterPostOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<AuthenticationLoginApiV1AuthLoginPostResponse>> {
@@ -459,7 +459,7 @@ export class AuthenticationApi extends runtime.BaseAPI {
     }
 
     /**
-     * Registers a new user.
+     * Creates a user account.
      * Register a user
      */
     async authenticationRegisterApiV1AuthRegisterPost(requestParameters: AuthenticationRegisterApiV1AuthRegisterPostOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<AuthenticationLoginApiV1AuthLoginPostResponse> {
@@ -546,8 +546,8 @@ export class AuthenticationApi extends runtime.BaseAPI {
     }
 
     /**
-     * Updates the authenticated user\'s profile.
-     * Update your profile
+     * Updates information for the authenticated user.
+     * Update the current user
      */
     async authenticationUpdateMeApiV1AuthMePatchRaw(requestParameters: AuthenticationUpdateMeApiV1AuthMePatchOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<AuthenticationGetMeApiV1AuthMeGetResponse>> {
         const requestOptions = await this.authenticationUpdateMeApiV1AuthMePatchRequestOpts(requestParameters);
@@ -557,8 +557,8 @@ export class AuthenticationApi extends runtime.BaseAPI {
     }
 
     /**
-     * Updates the authenticated user\'s profile.
-     * Update your profile
+     * Updates information for the authenticated user.
+     * Update the current user
      */
     async authenticationUpdateMeApiV1AuthMePatch(requestParameters: AuthenticationUpdateMeApiV1AuthMePatchOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<AuthenticationGetMeApiV1AuthMeGetResponse> {
         const response = await this.authenticationUpdateMeApiV1AuthMePatchRaw(requestParameters, initOverrides);

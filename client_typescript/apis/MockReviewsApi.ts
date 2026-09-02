@@ -136,7 +136,7 @@ export class MockReviewsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Creates a review in the mock review collection.
+     * Adds a review to the mock review collection.
      * Create a mock review
      */
     async mockReviewsMockCreateReviewRaw(requestParameters: MockReviewsMockCreateReviewOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockReviewsMockCreateReviewResponse>> {
@@ -147,7 +147,7 @@ export class MockReviewsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Creates a review in the mock review collection.
+     * Adds a review to the mock review collection.
      * Create a mock review
      */
     async mockReviewsMockCreateReview(requestParameters: MockReviewsMockCreateReviewOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockReviewsMockCreateReviewResponse> {
@@ -229,7 +229,7 @@ export class MockReviewsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock review identified by the item ID.
+     * Retrieves the mock review identified by the item ID.
      * Get a mock review
      */
     async mockReviewsMockGetReviewRaw(requestParameters: MockReviewsMockGetReviewRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockReviewsMockCreateReviewResponse>> {
@@ -240,7 +240,7 @@ export class MockReviewsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock review identified by the item ID.
+     * Retrieves the mock review identified by the item ID.
      * Get a mock review
      */
     async mockReviewsMockGetReview(requestParameters: MockReviewsMockGetReviewRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockReviewsMockCreateReviewResponse> {
@@ -284,7 +284,7 @@ export class MockReviewsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock review collection.
+     * Retrieves the mock review collection.
      * List mock reviews
      */
     async mockReviewsMockListReviewsRaw(requestParameters: MockReviewsMockListReviewsRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockReviewsMockListReviewsResponse>> {
@@ -295,7 +295,7 @@ export class MockReviewsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock review collection.
+     * Retrieves the mock review collection.
      * List mock reviews
      */
     async mockReviewsMockListReviews(requestParameters: MockReviewsMockListReviewsRequest = {}, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockReviewsMockListReviewsResponse> {

@@ -63,7 +63,7 @@ class ProjectsApi:
     ) -> None:
         """Create a project
 
-        Creates a project.
+        Adds a project to the project collection.
 
         :param project_record: (required)
         :type project_record: ProjectRecord
@@ -130,7 +130,7 @@ class ProjectsApi:
     ) -> ApiResponse[None]:
         """Create a project
 
-        Creates a project.
+        Adds a project to the project collection.
 
         :param project_record: (required)
         :type project_record: ProjectRecord
@@ -197,7 +197,7 @@ class ProjectsApi:
     ) -> RESTResponseType:
         """Create a project
 
-        Creates a project.
+        Adds a project to the project collection.
 
         :param project_record: (required)
         :type project_record: ProjectRecord
@@ -329,7 +329,7 @@ class ProjectsApi:
     ) -> ProjectsCreateProjectApiV1ProjectsPostResponse:
         """Create a project
 
-        Creates a project.
+        Adds a project to the project collection.
 
         :param projects_create_project_api_v1_projects_post_request: (required)
         :type projects_create_project_api_v1_projects_post_request: ProjectsCreateProjectApiV1ProjectsPostRequest
@@ -397,7 +397,7 @@ class ProjectsApi:
     ) -> ApiResponse[ProjectsCreateProjectApiV1ProjectsPostResponse]:
         """Create a project
 
-        Creates a project.
+        Adds a project to the project collection.
 
         :param projects_create_project_api_v1_projects_post_request: (required)
         :type projects_create_project_api_v1_projects_post_request: ProjectsCreateProjectApiV1ProjectsPostRequest
@@ -465,7 +465,7 @@ class ProjectsApi:
     ) -> RESTResponseType:
         """Create a project
 
-        Creates a project.
+        Adds a project to the project collection.
 
         :param projects_create_project_api_v1_projects_post_request: (required)
         :type projects_create_project_api_v1_projects_post_request: ProjectsCreateProjectApiV1ProjectsPostRequest
@@ -896,7 +896,7 @@ class ProjectsApi:
     ) -> ProjectsCreateProjectApiV1ProjectsPostResponse:
         """Get a project
 
-        Returns the project identified by the project ID.
+        Retrieves the project identified by the project ID.
 
         :param project_id: (required)
         :type project_id: str
@@ -964,7 +964,7 @@ class ProjectsApi:
     ) -> ApiResponse[ProjectsCreateProjectApiV1ProjectsPostResponse]:
         """Get a project
 
-        Returns the project identified by the project ID.
+        Retrieves the project identified by the project ID.
 
         :param project_id: (required)
         :type project_id: str
@@ -1032,7 +1032,7 @@ class ProjectsApi:
     ) -> RESTResponseType:
         """Get a project
 
-        Returns the project identified by the project ID.
+        Retrieves the project identified by the project ID.
 
         :param project_id: (required)
         :type project_id: str
@@ -1158,7 +1158,7 @@ class ProjectsApi:
     ) -> None:
         """List projects
 
-        Returns the project collection.
+        Retrieves the project collection.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -1221,7 +1221,7 @@ class ProjectsApi:
     ) -> ApiResponse[None]:
         """List projects
 
-        Returns the project collection.
+        Retrieves the project collection.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -1284,7 +1284,7 @@ class ProjectsApi:
     ) -> RESTResponseType:
         """List projects
 
-        Returns the project collection.
+        Retrieves the project collection.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -1399,7 +1399,7 @@ class ProjectsApi:
     ) -> ProjectsListProjectsApiV1ProjectsGetResponse:
         """List projects
 
-        Returns the project collection.
+        Retrieves the project collection.
 
         :param limit:
         :type limit: int
@@ -1475,7 +1475,7 @@ class ProjectsApi:
     ) -> ApiResponse[ProjectsListProjectsApiV1ProjectsGetResponse]:
         """List projects
 
-        Returns the project collection.
+        Retrieves the project collection.
 
         :param limit:
         :type limit: int
@@ -1551,7 +1551,7 @@ class ProjectsApi:
     ) -> RESTResponseType:
         """List projects
 
-        Returns the project collection.
+        Retrieves the project collection.
 
         :param limit:
         :type limit: int
