@@ -153,7 +153,7 @@ export class ProjectsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Creates a project.
+     * Adds a project to the project collection.
      * Create a project
      */
     async projectsCreateProjectRaw(requestParameters: ProjectsCreateProjectRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<void>> {
@@ -164,7 +164,7 @@ export class ProjectsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Creates a project.
+     * Adds a project to the project collection.
      * Create a project
      */
     async projectsCreateProject(requestParameters: ProjectsCreateProjectRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<void> {
@@ -201,7 +201,7 @@ export class ProjectsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Creates a project.
+     * Adds a project to the project collection.
      * Create a project
      */
     async projectsCreateProjectApiV1ProjectsPostRaw(requestParameters: ProjectsCreateProjectApiV1ProjectsPostOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<ProjectsCreateProjectApiV1ProjectsPostResponse>> {
@@ -212,7 +212,7 @@ export class ProjectsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Creates a project.
+     * Adds a project to the project collection.
      * Create a project
      */
     async projectsCreateProjectApiV1ProjectsPost(requestParameters: ProjectsCreateProjectApiV1ProjectsPostOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<ProjectsCreateProjectApiV1ProjectsPostResponse> {
@@ -304,7 +304,7 @@ export class ProjectsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the project identified by the project ID.
+     * Retrieves the project identified by the project ID.
      * Get a project
      */
     async projectsGetProjectApiV1ProjectsProjectIdGetRaw(requestParameters: ProjectsGetProjectApiV1ProjectsProjectIdGetRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<ProjectsCreateProjectApiV1ProjectsPostResponse>> {
@@ -315,7 +315,7 @@ export class ProjectsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the project identified by the project ID.
+     * Retrieves the project identified by the project ID.
      * Get a project
      */
     async projectsGetProjectApiV1ProjectsProjectIdGet(requestParameters: ProjectsGetProjectApiV1ProjectsProjectIdGetRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<ProjectsCreateProjectApiV1ProjectsPostResponse> {
@@ -343,7 +343,7 @@ export class ProjectsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the project collection.
+     * Retrieves the project collection.
      * List projects
      */
     async projectsListProjectsRaw(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<void>> {
@@ -354,7 +354,7 @@ export class ProjectsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the project collection.
+     * Retrieves the project collection.
      * List projects
      */
     async projectsListProjects(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<void> {
@@ -393,7 +393,7 @@ export class ProjectsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the project collection.
+     * Retrieves the project collection.
      * List projects
      */
     async projectsListProjectsApiV1ProjectsGetRaw(requestParameters: ProjectsListProjectsApiV1ProjectsGetRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<ProjectsListProjectsApiV1ProjectsGetResponse>> {
@@ -404,7 +404,7 @@ export class ProjectsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the project collection.
+     * Retrieves the project collection.
      * List projects
      */
     async projectsListProjectsApiV1ProjectsGet(requestParameters: ProjectsListProjectsApiV1ProjectsGetRequest = {}, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<ProjectsListProjectsApiV1ProjectsGetResponse> {

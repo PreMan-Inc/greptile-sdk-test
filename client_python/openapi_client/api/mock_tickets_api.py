@@ -61,7 +61,7 @@ class MockTicketsApi:
     ) -> MockTicketsMockCreateTicketResponse:
         """Create a mock ticket
 
-        Creates a ticket in the mock ticket collection.
+        Adds a ticket to the mock ticket collection.
 
         :param mock_tickets_mock_create_ticket_request: (required)
         :type mock_tickets_mock_create_ticket_request: MockTicketsMockCreateTicketRequest
@@ -130,7 +130,7 @@ class MockTicketsApi:
     ) -> ApiResponse[MockTicketsMockCreateTicketResponse]:
         """Create a mock ticket
 
-        Creates a ticket in the mock ticket collection.
+        Adds a ticket to the mock ticket collection.
 
         :param mock_tickets_mock_create_ticket_request: (required)
         :type mock_tickets_mock_create_ticket_request: MockTicketsMockCreateTicketRequest
@@ -199,7 +199,7 @@ class MockTicketsApi:
     ) -> RESTResponseType:
         """Create a mock ticket
 
-        Creates a ticket in the mock ticket collection.
+        Adds a ticket to the mock ticket collection.
 
         :param mock_tickets_mock_create_ticket_request: (required)
         :type mock_tickets_mock_create_ticket_request: MockTicketsMockCreateTicketRequest
@@ -609,7 +609,7 @@ class MockTicketsApi:
     ) -> MockTicketsMockCreateTicketResponse:
         """Get a mock ticket
 
-        Returns the mock ticket identified by the item ID.
+        Retrieves the mock ticket identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -678,7 +678,7 @@ class MockTicketsApi:
     ) -> ApiResponse[MockTicketsMockCreateTicketResponse]:
         """Get a mock ticket
 
-        Returns the mock ticket identified by the item ID.
+        Retrieves the mock ticket identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -747,7 +747,7 @@ class MockTicketsApi:
     ) -> RESTResponseType:
         """Get a mock ticket
 
-        Returns the mock ticket identified by the item ID.
+        Retrieves the mock ticket identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -878,7 +878,7 @@ class MockTicketsApi:
     ) -> MockTicketsMockListTicketsResponse:
         """List mock tickets
 
-        Returns the mock ticket collection.
+        Retrieves the mock ticket collection.
 
         :param limit:
         :type limit: int
@@ -958,7 +958,7 @@ class MockTicketsApi:
     ) -> ApiResponse[MockTicketsMockListTicketsResponse]:
         """List mock tickets
 
-        Returns the mock ticket collection.
+        Retrieves the mock ticket collection.
 
         :param limit:
         :type limit: int
@@ -1038,7 +1038,7 @@ class MockTicketsApi:
     ) -> RESTResponseType:
         """List mock tickets
 
-        Returns the mock ticket collection.
+        Retrieves the mock ticket collection.
 
         :param limit:
         :type limit: int

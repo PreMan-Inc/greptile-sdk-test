@@ -644,7 +644,7 @@ class TasksApi:
     ) -> TasksCreateTaskApiV1ProjectsProjectIdTasksPostResponse:
         """Get a task
 
-        Returns the task identified by the task ID.
+        Retrieves the task identified by the task ID.
 
         :param task_id: (required)
         :type task_id: str
@@ -712,7 +712,7 @@ class TasksApi:
     ) -> ApiResponse[TasksCreateTaskApiV1ProjectsProjectIdTasksPostResponse]:
         """Get a task
 
-        Returns the task identified by the task ID.
+        Retrieves the task identified by the task ID.
 
         :param task_id: (required)
         :type task_id: str
@@ -780,7 +780,7 @@ class TasksApi:
     ) -> RESTResponseType:
         """Get a task
 
-        Returns the task identified by the task ID.
+        Retrieves the task identified by the task ID.
 
         :param task_id: (required)
         :type task_id: str
@@ -910,7 +910,7 @@ class TasksApi:
     ) -> TasksListTasksApiV1ProjectsProjectIdTasksGetResponse:
         """List project tasks
 
-        Returns the tasks associated with the specified project.
+        Retrieves the tasks associated with the specified project.
 
         :param project_id: (required)
         :type project_id: str
@@ -990,7 +990,7 @@ class TasksApi:
     ) -> ApiResponse[TasksListTasksApiV1ProjectsProjectIdTasksGetResponse]:
         """List project tasks
 
-        Returns the tasks associated with the specified project.
+        Retrieves the tasks associated with the specified project.
 
         :param project_id: (required)
         :type project_id: str
@@ -1070,7 +1070,7 @@ class TasksApi:
     ) -> RESTResponseType:
         """List project tasks
 
-        Returns the tasks associated with the specified project.
+        Retrieves the tasks associated with the specified project.
 
         :param project_id: (required)
         :type project_id: str

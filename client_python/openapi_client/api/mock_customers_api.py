@@ -61,7 +61,7 @@ class MockCustomersApi:
     ) -> MockCustomersMockCreateCustomerResponse:
         """Create a mock customer
 
-        Creates a customer in the mock customer collection.
+        Adds a customer to the mock customer collection.
 
         :param mock_customers_mock_create_customer_request: (required)
         :type mock_customers_mock_create_customer_request: MockCustomersMockCreateCustomerRequest
@@ -130,7 +130,7 @@ class MockCustomersApi:
     ) -> ApiResponse[MockCustomersMockCreateCustomerResponse]:
         """Create a mock customer
 
-        Creates a customer in the mock customer collection.
+        Adds a customer to the mock customer collection.
 
         :param mock_customers_mock_create_customer_request: (required)
         :type mock_customers_mock_create_customer_request: MockCustomersMockCreateCustomerRequest
@@ -199,7 +199,7 @@ class MockCustomersApi:
     ) -> RESTResponseType:
         """Create a mock customer
 
-        Creates a customer in the mock customer collection.
+        Adds a customer to the mock customer collection.
 
         :param mock_customers_mock_create_customer_request: (required)
         :type mock_customers_mock_create_customer_request: MockCustomersMockCreateCustomerRequest
@@ -609,7 +609,7 @@ class MockCustomersApi:
     ) -> MockCustomersMockCreateCustomerResponse:
         """Get a mock customer
 
-        Returns the mock customer identified by the item ID.
+        Retrieves the mock customer identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -678,7 +678,7 @@ class MockCustomersApi:
     ) -> ApiResponse[MockCustomersMockCreateCustomerResponse]:
         """Get a mock customer
 
-        Returns the mock customer identified by the item ID.
+        Retrieves the mock customer identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -747,7 +747,7 @@ class MockCustomersApi:
     ) -> RESTResponseType:
         """Get a mock customer
 
-        Returns the mock customer identified by the item ID.
+        Retrieves the mock customer identified by the item ID.
 
         :param item_id: (required)
         :type item_id: str
@@ -879,7 +879,7 @@ class MockCustomersApi:
     ) -> MockCustomersMockListCustomersResponse:
         """List mock customers
 
-        Returns the mock customer collection.
+        Retrieves the mock customer collection.
 
         :param region: (required)
         :type region: str
@@ -963,7 +963,7 @@ class MockCustomersApi:
     ) -> ApiResponse[MockCustomersMockListCustomersResponse]:
         """List mock customers
 
-        Returns the mock customer collection.
+        Retrieves the mock customer collection.
 
         :param region: (required)
         :type region: str
@@ -1047,7 +1047,7 @@ class MockCustomersApi:
     ) -> RESTResponseType:
         """List mock customers
 
-        Returns the mock customer collection.
+        Retrieves the mock customer collection.
 
         :param region: (required)
         :type region: str

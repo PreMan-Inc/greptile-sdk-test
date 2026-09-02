@@ -64,6 +64,10 @@ export interface MockOrdersMockListOrdersRequest {
     /**
      * 
      */
+    region: MockOrdersMockListOrdersRegionEnum;
+    /**
+     * 
+     */
     limit?: number;
     /**
      * 
@@ -136,7 +140,7 @@ export class MockOrdersApi extends runtime.BaseAPI {
     }
 
     /**
-     * Creates an order in the mock order collection.
+     * Adds an order to the mock order collection.
      * Create a mock order
      */
     async mockOrdersMockCreateOrderRaw(requestParameters: MockOrdersMockCreateOrderOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockOrdersMockCreateOrderResponse>> {
@@ -147,7 +151,7 @@ export class MockOrdersApi extends runtime.BaseAPI {
     }
 
     /**
-     * Creates an order in the mock order collection.
+     * Adds an order to the mock order collection.
      * Create a mock order
      */
     async mockOrdersMockCreateOrder(requestParameters: MockOrdersMockCreateOrderOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockOrdersMockCreateOrderResponse> {
@@ -229,7 +233,7 @@ export class MockOrdersApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock order identified by the item ID.
+     * Retrieves the mock order identified by the item ID.
      * Get a mock order
      */
     async mockOrdersMockGetOrderRaw(requestParameters: MockOrdersMockGetOrderRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockOrdersMockCreateOrderResponse>> {
@@ -240,7 +244,7 @@ export class MockOrdersApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock order identified by the item ID.
+     * Retrieves the mock order identified by the item ID.
      * Get a mock order
      */
     async mockOrdersMockGetOrder(requestParameters: MockOrdersMockGetOrderRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockOrdersMockCreateOrderResponse> {
@@ -252,6 +256,13 @@ export class MockOrdersApi extends runtime.BaseAPI {
      * Creates request options for mockOrdersMockListOrders without sending the request
      */
     async mockOrdersMockListOrdersRequestOpts(requestParameters: MockOrdersMockListOrdersRequest): Promise<runtime.RequestOpts> {
+        if (requestParameters['region'] == null) {
+            throw new runtime.RequiredError(
+                'region',
+                'Required parameter "region" was null or undefined when calling mockOrdersMockListOrders().'
+            );
+        }
+
         const queryParameters: any = {};
 
         if (requestParameters['limit'] != null) {
@@ -264,6 +275,10 @@ export class MockOrdersApi extends runtime.BaseAPI {
 
         if (requestParameters['q'] != null) {
             queryParameters['q'] = requestParameters['q'];
+        }
+
+        if (requestParameters['region'] != null) {
+            queryParameters['region'] = requestParameters['region'];
         }
 
         if (requestParameters['sort'] != null) {
@@ -284,7 +299,7 @@ export class MockOrdersApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock order collection.
+     * Retrieves the mock order collection.
      * List mock orders
      */
     async mockOrdersMockListOrdersRaw(requestParameters: MockOrdersMockListOrdersRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockOrdersMockListOrdersResponse>> {
@@ -295,10 +310,10 @@ export class MockOrdersApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock order collection.
+     * Retrieves the mock order collection.
      * List mock orders
      */
-    async mockOrdersMockListOrders(requestParameters: MockOrdersMockListOrdersRequest = {}, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockOrdersMockListOrdersResponse> {
+    async mockOrdersMockListOrders(requestParameters: MockOrdersMockListOrdersRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockOrdersMockListOrdersResponse> {
         const response = await this.mockOrdersMockListOrdersRaw(requestParameters, initOverrides);
         return await response.value();
     }
@@ -419,6 +434,15 @@ export class MockOrdersApi extends runtime.BaseAPI {
 
 }
 
+/**
+ * @export
+ */
+export const MockOrdersMockListOrdersRegionEnum = {
+    Emea: 'emea',
+    Apac: 'apac',
+    Amer: 'amer',
+} as const;
+export type MockOrdersMockListOrdersRegionEnum = typeof MockOrdersMockListOrdersRegionEnum[keyof typeof MockOrdersMockListOrdersRegionEnum];
 /**
  * @export
  */

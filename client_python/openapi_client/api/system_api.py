@@ -53,7 +53,7 @@ class SystemApi:
     ) -> SystemHealthHealthGetResponse:
         """Check system health
 
-        Returns the system's health status.
+        Retrieves the system's health status.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -116,7 +116,7 @@ class SystemApi:
     ) -> ApiResponse[SystemHealthHealthGetResponse]:
         """Check system health
 
-        Returns the system's health status.
+        Retrieves the system's health status.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request
@@ -179,7 +179,7 @@ class SystemApi:
     ) -> RESTResponseType:
         """Check system health
 
-        Returns the system's health status.
+        Retrieves the system's health status.
 
         :param _request_timeout: timeout setting for this request. If one
                                  number provided, it will be total request

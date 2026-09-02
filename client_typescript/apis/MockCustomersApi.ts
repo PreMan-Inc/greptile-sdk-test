@@ -140,7 +140,7 @@ export class MockCustomersApi extends runtime.BaseAPI {
     }
 
     /**
-     * Creates a customer in the mock customer collection.
+     * Adds a customer to the mock customer collection.
      * Create a mock customer
      */
     async mockCustomersMockCreateCustomerRaw(requestParameters: MockCustomersMockCreateCustomerOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockCustomersMockCreateCustomerResponse>> {
@@ -151,7 +151,7 @@ export class MockCustomersApi extends runtime.BaseAPI {
     }
 
     /**
-     * Creates a customer in the mock customer collection.
+     * Adds a customer to the mock customer collection.
      * Create a mock customer
      */
     async mockCustomersMockCreateCustomer(requestParameters: MockCustomersMockCreateCustomerOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockCustomersMockCreateCustomerResponse> {
@@ -233,7 +233,7 @@ export class MockCustomersApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock customer identified by the item ID.
+     * Retrieves the mock customer identified by the item ID.
      * Get a mock customer
      */
     async mockCustomersMockGetCustomerRaw(requestParameters: MockCustomersMockGetCustomerRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockCustomersMockCreateCustomerResponse>> {
@@ -244,7 +244,7 @@ export class MockCustomersApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock customer identified by the item ID.
+     * Retrieves the mock customer identified by the item ID.
      * Get a mock customer
      */
     async mockCustomersMockGetCustomer(requestParameters: MockCustomersMockGetCustomerRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockCustomersMockCreateCustomerResponse> {
@@ -299,7 +299,7 @@ export class MockCustomersApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock customer collection.
+     * Retrieves the mock customer collection.
      * List mock customers
      */
     async mockCustomersMockListCustomersRaw(requestParameters: MockCustomersMockListCustomersRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockCustomersMockListCustomersResponse>> {
@@ -310,7 +310,7 @@ export class MockCustomersApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock customer collection.
+     * Retrieves the mock customer collection.
      * List mock customers
      */
     async mockCustomersMockListCustomers(requestParameters: MockCustomersMockListCustomersRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockCustomersMockListCustomersResponse> {

@@ -136,7 +136,7 @@ export class MockProductsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Creates a product in the mock product collection.
+     * Adds a product to the mock product collection.
      * Create a mock product
      */
     async mockProductsMockCreateProductRaw(requestParameters: MockProductsMockCreateProductOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockProductsMockCreateProductResponse>> {
@@ -147,7 +147,7 @@ export class MockProductsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Creates a product in the mock product collection.
+     * Adds a product to the mock product collection.
      * Create a mock product
      */
     async mockProductsMockCreateProduct(requestParameters: MockProductsMockCreateProductOperationRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockProductsMockCreateProductResponse> {
@@ -229,7 +229,7 @@ export class MockProductsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock product identified by the item ID.
+     * Retrieves the mock product identified by the item ID.
      * Get a mock product
      */
     async mockProductsMockGetProductRaw(requestParameters: MockProductsMockGetProductRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockProductsMockCreateProductResponse>> {
@@ -240,7 +240,7 @@ export class MockProductsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock product identified by the item ID.
+     * Retrieves the mock product identified by the item ID.
      * Get a mock product
      */
     async mockProductsMockGetProduct(requestParameters: MockProductsMockGetProductRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockProductsMockCreateProductResponse> {
@@ -284,7 +284,7 @@ export class MockProductsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock product collection.
+     * Retrieves the mock product collection.
      * List mock products
      */
     async mockProductsMockListProductsRaw(requestParameters: MockProductsMockListProductsRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<MockProductsMockListProductsResponse>> {
@@ -295,7 +295,7 @@ export class MockProductsApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the mock product collection.
+     * Retrieves the mock product collection.
      * List mock products
      */
     async mockProductsMockListProducts(requestParameters: MockProductsMockListProductsRequest = {}, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<MockProductsMockListProductsResponse> {

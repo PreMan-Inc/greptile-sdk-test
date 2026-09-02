@@ -260,7 +260,7 @@ export class TasksApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the task identified by the task ID.
+     * Retrieves the task identified by the task ID.
      * Get a task
      */
     async tasksGetTaskApiV1TasksTaskIdGetRaw(requestParameters: TasksGetTaskApiV1TasksTaskIdGetRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<TasksCreateTaskApiV1ProjectsProjectIdTasksPostResponse>> {
@@ -271,7 +271,7 @@ export class TasksApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the task identified by the task ID.
+     * Retrieves the task identified by the task ID.
      * Get a task
      */
     async tasksGetTaskApiV1TasksTaskIdGet(requestParameters: TasksGetTaskApiV1TasksTaskIdGetRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<TasksCreateTaskApiV1ProjectsProjectIdTasksPostResponse> {
@@ -319,7 +319,7 @@ export class TasksApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the tasks associated with the specified project.
+     * Retrieves the tasks associated with the specified project.
      * List project tasks
      */
     async tasksListTasksApiV1ProjectsProjectIdTasksGetRaw(requestParameters: TasksListTasksApiV1ProjectsProjectIdTasksGetRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<TasksListTasksApiV1ProjectsProjectIdTasksGetResponse>> {
@@ -330,7 +330,7 @@ export class TasksApi extends runtime.BaseAPI {
     }
 
     /**
-     * Returns the tasks associated with the specified project.
+     * Retrieves the tasks associated with the specified project.
      * List project tasks
      */
     async tasksListTasksApiV1ProjectsProjectIdTasksGet(requestParameters: TasksListTasksApiV1ProjectsProjectIdTasksGetRequest, initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<TasksListTasksApiV1ProjectsProjectIdTasksGetResponse> {
